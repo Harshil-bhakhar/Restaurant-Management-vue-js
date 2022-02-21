@@ -44,7 +44,7 @@ export default {
   //page Redirect
   async mounted() {
     let user = localStorage.getItem("user-info");
-    // this.name = JSON.parse(user).name; //name return
+    // this.name = JSON.parse(user).name; //name returns
     if (!user) {
       this.$router.push({ name: "SignUp" });
     }
